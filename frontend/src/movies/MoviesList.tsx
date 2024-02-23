@@ -25,7 +25,7 @@ const MoviesList = (props: moviesListsProps) => {
   // )
   // }
 
-  <GenericList list={props.movies}>
+  return <GenericList list={props.movies}>
       <div className={css.div}>
             {props.movies?.map(movie =>
                 <IndividualMovie {...movie} key={movie.id} />)}
